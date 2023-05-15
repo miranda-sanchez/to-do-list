@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    background-image: linear-gradient(135deg, #489FB5, #82C0CC);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile first */
+
+#content {
+    width: 350px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    margin: 1.5rem
+}
+
+.container {
+
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#newtask {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#newtask input {
+    width: 70%;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 12px;
+    color: black;
+    border: 2px solid #16697A;
+    border-radius: 5px;
+}
+
+#newtask input:focus {
+    outline: none;
+    border: 2px solid #FFA62B;
+    border-radius: 5px;
+}
+
+#newtask button {
+    width: 20%;
+    height: 45px;
+    background-color: #FFA62B;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#tasks {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.task {
+    background-color: #ffffff;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #82C0CC;
+    cursor: pointer;
+}
+
+.task span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.task button {
+    background-color: #FFA62B;
+    color: #ffffff;
+    border: none;
+    width: 15%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+footer {
+    color: #ffffff;
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+    text-align: center;   
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    #content {
+        width: 600px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #newtask input, #newtask button, #tasks {
+        font-size: 1.2rem;
+    }
+    
+    #newtask, #tasks {
+        padding: 30px 20px;
+    }
+
+    footer {
+        font-size: 1rem;
+    } 
+}
+
+@media (min-width: 992px) {
+    
+}
